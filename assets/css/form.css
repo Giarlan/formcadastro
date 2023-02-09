@@ -171,29 +171,51 @@ body {
     color: #fff;
  }
 
- @media screen and (max-width: 1330px) {
-    .form-image {
-        display: none;
-    }
+ @media screen and (max-width: 1360px) {
     .container {
+        display: block;
+        width: 90%;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .form-image {
+        width: 100%;
+    }
+    .form-image img {
         width: 50%;
     }
     .form {
         width: 100%;
     }
+    .input-group {
+        display: block;
+    }
  }
 
  @media screen and (max-width: 1064px) {
     .container {
-        width: 90%;
-        height: auto;        
+        width: 5800%;
+        height: auto;
+        overflow-y: scroll; 
+        overflow-x: none;       
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 24px;
     }
     .input-group {
         flex-direction: column;
         overflow-y: scroll;
         flex-wrap: nowrap;
         max-height: 10rem;
-        padding-right: 5rem;        
+        padding-right: 5rem;
+        display: block;        
     }
     .gender-inputs {
         margin-top: 2rem;
@@ -204,5 +226,36 @@ body {
     .gender-input {
         margin-top: 0.5rem;
     }
+
+    @media screen and (max-width: 360px) {
+        .container {
+            width: 5800%;
+            height: auto;
+            overflow-y: scroll; 
+            overflow-x: none;       
+        }
+        h2 {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 18px;
+        }
+        .input-group {
+            flex-direction: column;
+            overflow-y: scroll;
+            flex-wrap: nowrap;
+            max-height: 10rem;
+            padding-right: 5rem;
+            display: block;        
+        }
+        .gender-inputs {
+            margin-top: 2rem;
+        }
+        .gender-group {
+            flex-direction: column;
+        }
+        .gender-input {
+            margin-top: 0.5rem;
+        }
 
  }
